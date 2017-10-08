@@ -13,7 +13,7 @@ class Static extends React.Component {
     static contextTypes = { router: React.PropTypes.func }
     componentWillMount() {
         this.props.setNavList([
-             { path: '/', label: '首頁', type: 'title' },
+             { path: '/', label: 'home', type: 'title' },
              { path: '/about/', label: '關於本站', type: 'section' },
              { path: '/how/', label: '如何發言', type: 'sub' },
              { path: '/tutorial/', label: '使用手冊', type: 'sub' },

@@ -52,19 +52,19 @@ class Stage extends React.Component {
         let leftTimeItem = ""
 
         if(isDue){
-            //如果已經結束，顯示「本階段已結束 x/xx - o/oo」
-            leftTimeItem = <div className="Stage-stat">已結束<div className="Stage-statHighlight">{start.format('M/D')} ~ {end.format('M/D')}</div></div>;
+            //If it is over, show "This stage has ended x / xx - o / oo"
+            leftTimeItem = <div className="Stage-stat">Stage.jsx - condition<div className="Stage-statHighlight">{start.format('M/D')} ~ {end.format('M/D')}</div></div>;
         }else{
-            //如果此階段還沒截止，計算剩下的天數
+            //If this stage has not yet been closed, calculate the remaining days
             timeLeft = end.diff(now, 'days')
 
-            //計算進度
+            //Calculate the progress
             const total = end.diff(start)
             const current = now.diff(start)
             const percentage = Math.round(current / total * 100)
             style.width = `${percentage}%`
 
-            //還沒結束才顯示 progress bar
+            //Not yet finished progress bar
             progressBarItem = (
                 <div className="Stage-barBackground">
                     <div className="Stage-startDate">{start.format('MM/DD')}</div>
@@ -75,7 +75,7 @@ class Stage extends React.Component {
             );
 
             //如果還沒結束，顯示「剩下天數」
-            leftTimeItem = <div className="Stage-stat">本階段還有<div className="Stage-statHighlight">{timeLeft} 天</div></div>;
+            leftTimeItem = <div className="Stage-stat">leftTimeItem(classe Stage)<div className="Stage-statHighlight">{timeLeft} 天</div></div>;
         }
 
         //計算討論區的 post 數量
@@ -127,8 +127,8 @@ class Stage extends React.Component {
                 
                 <div>
                     {leftTimeItem}
-                    <div className="Stage-stat">討論話題<div className="Stage-statHighlight">{topicCount-1}</div></div>
-                    <div className="Stage-stat">意見數<div className="Stage-statHighlight">{postCount}</div></div>
+                    <div className="Stage-stat">Stage.jsx - topicCount<div className="Stage-statHighlight">{topicCount-1}</div></div>
+                    <div className="Stage-stat">Stage.jsx - postCount<div className="Stage-statHighlight">{postCount}</div></div>
                 </div>
             </Link>
         )

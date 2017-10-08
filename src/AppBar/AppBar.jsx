@@ -24,7 +24,7 @@ class AppBar extends React.Component {
                     <div className="AppBar-siteLogo">
                         <img className="AppBar-siteLogoImg"
                              src={imgURL}/>
-                        <div className="AppBar-siteLogoText">vTaiwan</div>
+                        <div className="AppBar-siteLogoText">pop</div>
                     </div>
                 </Link>
             </div>

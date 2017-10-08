@@ -9,8 +9,8 @@ module.exports = {
         {
             "gitbook_url": "https://g0v.github.io/cyberbullying-gitbook",
             "category_num": 92,
-            "proposal_cht":"網路霸凌",
-            "category_cht":"討論",
+            "proposal_cht":"Networking bullying",
+            "category_cht":"discuss",
             "discussions_id":[ {"page":1, "postID": 554}, {"page":1, "postID": 548}]
         }
     },
@@ -20,8 +20,8 @@ module.exports = {
         {
             "gitbook_url": "https://g0v.github.io/infosecurity-gitbook",
             "category_num": 88,
-            "proposal_cht":"資安管理",
-            "category_cht":"討論"
+            "proposal_cht":"Security management",
+            "category_cht":"discuss"
         }
     },
     "crowdfunding":
@@ -30,7 +30,7 @@ module.exports = {
         {
             "gitbook_url": "https://g0v.github.io/crowdfunding-ref1-gitbook",
             "category_num": 59,
-            "proposal_cht":"群眾募資",
+            "proposal_cht":"mass fundraising",
             "category_cht":"定案"
         },
         "ref1" :

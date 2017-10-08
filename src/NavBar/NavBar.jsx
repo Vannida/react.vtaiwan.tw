@@ -16,7 +16,7 @@ class NavBar extends React.Component {
     }
     setTitle(section) {
         if (!section) {
-            document.title = 'vTaiwan.tw';
+            document.title = 'NavBar_NavBar_setTitle';
             return;
         }
         const activeItem = (this.props.nav_list || []).filter(({type, path}) => type === 'section' || path === `/${section}/`)[0] || {};
